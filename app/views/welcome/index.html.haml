@@ -1,0 +1,29 @@
+=render "layouts/navbar"
+.jumbotron
+  .container.width-panel
+    .row.height-panel.middle-xs
+      .col-xs-2
+        .panel.panel-default.height-panel
+          .panel-body
+            %ul.nav.nav-pills.nav-stacked{:style => "max-width: 300px;"}
+              %li.active
+                =link_to "inicio", root_path
+              %li.dropdown
+                %a.dropdown-toggle{"data-target" => "#", "data-toggle" => "dropdown", :href => "bootstrap-elements.html"}
+                  Mercantil
+                  %span.caret
+                %ul.dropdown-menu
+                  %li
+                    =link_to "Nuevo", new_mercantile_path
+                  %li.divider
+                  %li
+                    =link_to "Ver", mercantiles_path
+              %li
+                %a{:href => "javascript:void(0)"} Búsqueda
+              %li
+                =link_to "Cerrar Sesión", destroy_user_session_path, method: :delete
+      .col-xs-10.middle-xs.center-xs
+        .panel.panel-default.height-panel
+          .panel-body
+            %h1 Bienvenido
+            =image_tag "logo.png", class: "img-rounded"

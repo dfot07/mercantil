@@ -1,0 +1,1 @@
+json.partial! "mercantiles/mercantile", mercantile: @mercantile

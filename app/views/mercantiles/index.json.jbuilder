@@ -1,0 +1,1 @@
+json.array! @mercantiles, partial: 'mercantiles/mercantile', as: :mercantile

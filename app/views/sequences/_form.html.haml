@@ -1,0 +1,9 @@
+= simple_form_for(@sequence) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :secuencia
+    = f.input :fecha
+
+  .form-actions
+    = f.button :submit

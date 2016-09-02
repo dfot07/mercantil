@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @appearer.user
+%p
+  %b Mercantile:
+  = @appearer.mercantile
+%p
+  %b Apellidos:
+  = @appearer.apellidos
+%p
+  %b Nombres:
+  = @appearer.nombres
+%p
+  %b Identificacion:
+  = @appearer.identificacion
+
+= link_to 'Edit', edit_appearer_path(@appearer)
+\|
+= link_to 'Back', appearers_path

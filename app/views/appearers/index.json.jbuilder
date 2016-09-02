@@ -1,0 +1,1 @@
+json.array! @appearers, partial: 'appearers/appearer', as: :appearer

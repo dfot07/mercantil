@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @sequence.user
+%p
+  %b Secuencia:
+  = @sequence.secuencia
+%p
+  %b Fecha:
+  = @sequence.fecha
+
+= link_to 'Edit', edit_sequence_path(@sequence)
+\|
+= link_to 'Back', sequences_path

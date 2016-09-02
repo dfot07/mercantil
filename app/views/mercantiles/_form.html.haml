@@ -1,0 +1,15 @@
+= simple_form_for(@mercantile, html: { class: 'form-horizontal' }) do |f|
+  = f.error_notification
+
+  .form-group
+    =f.label :acto, class: "col-xs-3 control-label"
+    .col-xs-7
+      = f.input_field :acto, class: "form-control", placeholder: "Acto/Contrato"
+  .form-group
+    =f.label :observacion, class: "col-xs-3 control-label"
+    .col-xs-7
+      = f.input_field :observacion, class: "form-control", placeholder: "Observación"
+
+  .form-group
+    .col-xs-5.center-xs
+    = f.button :submit, class: "btn btn-raised btn-info btn-lg", value: "Guardar"

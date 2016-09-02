@@ -1,0 +1,29 @@
+%h1 Listing mercantiles
+
+%table
+  %thead
+    %tr
+      %th User
+      %th Acto
+      %th Observacion
+      %th Secuencia
+      %th Fecha
+      %th
+      %th
+      %th
+
+  %tbody
+    - @mercantiles.each do |mercantile|
+      %tr
+        %td= mercantile.user
+        %td= mercantile.acto
+        %td= mercantile.observacion
+        %td= mercantile.secuencia
+        %td= mercantile.fecha
+        %td= link_to 'Show', mercantile
+        %td= link_to 'Edit', edit_mercantile_path(mercantile)
+        %td= link_to 'Destroy', mercantile, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Mercantile', new_mercantile_path

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  acto: MyString
+  observacion: MyString
+  secuencia: 1
+  fecha: 1
+
+two:
+  user: two
+  acto: MyString
+  observacion: MyString
+  secuencia: 1
+  fecha: 1

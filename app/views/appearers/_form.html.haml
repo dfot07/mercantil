@@ -1,0 +1,19 @@
+= simple_form_for [@mercantile, @appearer], html: { class: 'form-horizontal' } do |f|
+  = f.error_notification
+  
+  .form-group
+    =f.label :apellidos, class: "col-xs-3 control-label"
+    .col-xs-7
+      = f.input_field :apellidos, class: "form-control", placeholder: "Apellidos"
+  .form-group
+    =f.label :nombres, class: "col-xs-3 control-label"
+    .col-xs-7
+      = f.input_field :nombres, class: "form-control", placeholder: "Nombres"
+  .form-group
+    =f.label :identificacion, class: "col-xs-3 control-label"
+    .col-xs-7
+      = f.input_field :identificacion, class: "form-control", placeholder: "Identificación"
+
+  .form-group
+    .col-xs-5.center-xs
+    = f.button :submit, class: "btn btn-raised btn-info btn-lg", value: "Guardar"
